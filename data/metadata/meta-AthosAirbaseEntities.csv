@@ -1,0 +1,23 @@
+,data type,n values,n missing,n unique,categorical,numeric,ordinal,response
+ScenarioId,int64,3994,0,7,True,True,True,False
+AirbaseId,object,3994,0,2,True,False,False,False
+EntityId,int64,3994,0,858,False,True,True,False
+EntityName,object,3994,0,823,False,False,False,False
+EntityTypeId,int64,3994,0,23,True,True,True,False
+IsEnabled,int64,3994,0,2,True,True,True,False
+IsGeoLocated,int64,3994,0,2,True,True,True,False
+CenterPointX,float64,3994,0,810,False,True,True,False
+CenterPointY,float64,3994,0,794,False,True,True,False
+CenterPointZ,float64,3994,0,704,False,True,True,False
+CenterPointLat,float64,3994,0,806,False,True,True,False
+CenterPointLon,float64,3994,0,821,False,True,True,False
+CenterPointAlt,float64,3994,0,754,False,True,True,False
+ShapeTypeId,float64,3474,520,3,True,True,True,False
+Radius,float64,24,3970,2,False,True,True,False
+Length,float64,3450,544,520,False,True,True,False
+Width,float64,3450,544,19,True,True,True,False
+Height,float64,401,3593,2,True,True,True,False
+Orientation,float64,3970,24,524,False,True,True,False
+BermInnerDistance,float64,0,3994,0,False,True,True,False
+BermOuterDistance,float64,0,3994,0,False,True,True,False
+BermHeight,float64,0,3994,0,False,True,True,False

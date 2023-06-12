@@ -1,0 +1,12 @@
+column_name,type
+design_point,categorical
+iteration,categorical
+LaunchRequestName,categorical
+MissionLoadoutName,categorical
+BeginLaunchWindow,categorical
+EndLaunchWindow,categorical
+AircraftTypeName,categorical
+quantityLaunched,categorical
+MinAircraft,categorical
+proportionExecuted,categorical
+SortieDurationInHoursDistribution,categorical

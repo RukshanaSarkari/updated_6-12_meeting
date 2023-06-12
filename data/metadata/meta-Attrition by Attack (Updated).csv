@@ -1,0 +1,15 @@
+,data type,n values,n missing,n unique,categorical,numeric,ordinal,response
+design_point,int64,4123,0,4,True,True,True,False
+iteration,int64,4123,0,10,True,True,True,False
+ScenarioId,int64,4123,0,30,True,True,True,False
+IterationId,int64,4123,0,30,True,True,True,False
+porthosAttackName,object,4123,0,3,True,False,False,True
+time,float64,3859,264,3,True,True,True,True
+AirbaseId,object,4123,0,2,True,False,False,False
+porthosEntityId,int64,4123,0,119,True,True,True,True
+athosEntityId,int64,4123,0,206,True,True,True,True
+entityTypeName,object,4123,0,9,True,False,False,True
+EntityName,object,4123,0,116,True,False,False,False
+containedEntityName,float64,0,4123,0,False,True,True,True
+killCriteria,object,4123,0,5,True,False,False,True
+KillCriteriaAchieved,int64,4123,0,1,True,True,True,False
