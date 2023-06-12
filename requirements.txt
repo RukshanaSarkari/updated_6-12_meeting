@@ -1,2 +1,5 @@
-streamlit==1.23.1
+﻿streamlit==1.23.1
 streamlit-extras==0.2.7
+scikit-learn==1.2.2
+plotly==5.14.1
+seaborn==0.12.2

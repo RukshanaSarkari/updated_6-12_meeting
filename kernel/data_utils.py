@@ -47,11 +47,11 @@ def get_tables_in_db(db_path):
 @st.cache_data
 def load_csv(sel_csv, path=None):
     if path:
-        sel_csv = f"{path}\\{sel_csv}"
+        sel_csv = f"{path}//{sel_csv}"
 
     # # set and load csv selected csv
     # csv_files = st.session_state["csv_df"]["CSV collection"]
-    # csv_path = f"{st.session_state['data_dir']}\\{sel_csv}"
+    # csv_path = f"{st.session_state['data_dir']}//{sel_csv}"
     #
     # csv_index = int(csv_files[csv_files == sel_csv].index[0])
 
@@ -96,7 +96,7 @@ def generate_var_metadata(path, csv):
         columns=["data type", "n values", "n missing", "n unique", "categorical", "numeric", "ordinal", "response"]
     )
 
-    var_df.to_csv("data\\metadata\\meta-" + csv)
+    var_df.to_csv("data//metadata//meta-" + csv)
     return var_df
 
     # st.write(df.value_counts())
@@ -178,7 +178,7 @@ def generate_csv_metadata(csv_files):
 
     for k, file in enumerate(csv_files):
         name[k] = file
-        location[k] = "data\\imported_csv_files\\" + file
+        location[k] = "data//imported_csv_files//" + file
         file_size_bytes = os.path.getsize(location[k])
         file_size_mb = file_size_bytes / (1024 * 1024)
         size[k] = round(file_size_mb, 2)
@@ -190,7 +190,7 @@ def generate_csv_metadata(csv_files):
         columns=["name", "location", "size (mb)", "n_rows"],
     )
 
-    meta_df.to_csv("data\\metadata\\csv_metadata.csv")
+    meta_df.to_csv("data//metadata//csv_metadata.csv")
 
 
 def filter_table_columns():

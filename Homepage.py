@@ -23,15 +23,15 @@ st.set_page_config(
 load_widget_state()
 
 # Import all .csv files in the folder
-csv_files = du.get_files_in_folder("data\\imported_csv_files", "csv")
+csv_files = du.get_files_in_folder("data//imported_csv_files", "csv")
 
 # Import metadata files
 if csv_files:
     n_csv = len(csv_files)
-    meta_files = du.get_files_in_folder("data\\metadata", "csv")
+    meta_files = du.get_files_in_folder("data//metadata", "csv")
 
     if "csv_metadata.csv" in meta_files:
-        csv_meta_df = du.load_csv("data\\metadata\\csv_metadata.csv")
+        csv_meta_df = du.load_csv("data//metadata//csv_metadata.csv")
 
     else:
         # Generate metadata for each of the csv files
@@ -41,13 +41,13 @@ if csv_files:
     var_meta_dfs = dict()
     for file in csv_files:
 
-        csv_dfs[file] = du.load_csv("data\\imported_csv_files\\" + file)
+        csv_dfs[file] = du.load_csv("data//imported_csv_files//" + file)
 
         if file in meta_files:
-            var_meta_dfs[file] = du.load_csv("data\\metadata\\meta-" + file)
+            var_meta_dfs[file] = du.load_csv("data//metadata//meta-" + file)
         else:
             var_meta_dfs[file] = \
-                du.generate_var_metadata("data\\imported_csv_files\\", file)
+                du.generate_var_metadata("data//imported_csv_files//", file)
 
 # Initialize session state variables
 if "page" not in st.session_state:
@@ -57,7 +57,7 @@ if "page" not in st.session_state:
         "page": "Homepage",
 
         # Resources
-        "data_dir": "data\\imported_csv_files",
+        "data_dir": "data//imported_csv_files",
         "csv_files": csv_files,
         "csv_meta_df": csv_meta_df,
         "csv_dfs": csv_dfs,

@@ -173,3 +173,4 @@ else:
 # ----------------------------------------------------------------
 # Page Navigation
 au.display_page_navigation("TreeMap", "Data Aggregation")
+

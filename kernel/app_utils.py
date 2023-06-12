@@ -48,11 +48,11 @@ def display_csv_collection():
                 for row, val in edited_rows.items():
 
                     if "CSV collection" in val:
-                        old_csv_names.append(f"{st.session_state['data_dir']}\\{csv_files[row]}")
-                        new_csv_names.append(f"{st.session_state['data_dir']}\\{val['CSV collection']}")
+                        old_csv_names.append(f"{st.session_state['data_dir']}//{csv_files[row]}")
+                        new_csv_names.append(f"{st.session_state['data_dir']}//{val['CSV collection']}")
 
                     if "*" in val:
-                        csv_files_selected.append(f"{st.session_state['data_dir']}\\{csv_files[row]}")
+                        csv_files_selected.append(f"{st.session_state['data_dir']}//{csv_files[row]}")
                         rows_selected.append(row)
 
         csv_action_cols = st.columns([1, 1, 1], gap="small")
